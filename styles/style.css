@@ -1,0 +1,130 @@
+* {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    /* outline: 1px solid #ff0000; */
+}
+
+
+
+
+
+/* BUTTON STYLE 1 STARTS */
+.button-style-1 {
+    background-color: #272727;
+    border-style: solid;
+    border-width: 2px;
+    color: #ffffff;
+    border-top-color: #aeaeae;
+    border-bottom-color: #000000;
+    border-left-color: #555555;
+    border-right-color: #eeeeee;
+    padding: 2px;
+}
+
+.button-style-1-pressed {
+    background-color: #7c7c7c;
+    border-style: solid;
+    border-width: 2px;
+    color: #ffffff;
+    border-top-color: #000000;
+    border-bottom-color: #aeaeae;
+    border-left-color: #eeeeee;
+    border-right-color: #555555;
+    padding: 2px;
+}
+
+.button-style-1:hover {
+    background-color: #d6d6d6;
+    border-style: solid;
+    border-width: 2px;
+    color: #000000;
+    border-top-color: #eeeeee;
+    border-bottom-color: #000000;
+    border-left-color: #555555;
+    border-right-color: #eeeeee;
+    padding: 2px;
+}
+/* BUTTON STYLE 1 ENDS */
+
+
+
+
+/* BUTTON STYLE 2 STARTS */
+.button-style-2 {
+    background-color: #ff4000;
+    border-style: solid;
+    border-width: 2px;
+    color: #ffffff;
+    border-top-color: #ff7649;
+    border-bottom-color: #4e1400;
+    border-left-color: #a22900;
+    border-right-color: #ffb9a1;
+    padding: 8px;
+}
+
+.button-style-2:hover {
+    background-color: #ff6e3e;
+    border-style: solid;
+    border-width: 2px;
+    color: #ffffff;
+    border-top-color: #ffb9a1;
+    border-bottom-color: #4e1400;
+    border-left-color: #a22900;
+    border-right-color: #ffb9a1;
+    padding: 8px;
+}
+
+.button-style-2:active {
+    background-color: #9f2800;
+    border-style: solid;
+    border-width: 2px;
+    color: #ffffff;
+    border-top-color: #4e1400;
+    border-bottom-color: #ff7649;
+    border-left-color: #ffb9a1;
+    border-right-color: #a22900;
+    padding: 8px;
+}
+/* BUTTON STYLE 2 ENDS */
+
+
+
+
+/* BUTTON STYLE 3 STARTS */
+.button-style-3 {
+    background-color: #00c43b;
+    border-style: solid;
+    border-width: 2px;
+    color: #ffffff;
+    border-top-color: #00ff4c;
+    border-bottom-color: #004715;
+    border-left-color: #007523;
+    border-right-color: #50ff84;
+    padding: 8px;
+}
+
+.button-style-3:hover {
+    background-color: #00eb46;
+    border-style: solid;
+    border-width: 2px;
+    color: #ffffff;
+    border-top-color: #50ff84;
+    border-bottom-color: #004715;
+    border-left-color: #007523;
+    border-right-color: #50ff84;
+    padding: 8px;
+}
+
+.button-style-3:active {
+    background-color: #005a1b;
+    border-style: solid;
+    border-width: 2px;
+    color: #ffffff;
+    border-top-color: #004715;
+    border-bottom-color: #00ff4c;
+    border-left-color: #50ff84;
+    border-right-color: #007523;
+    padding: 8px;
+}
+/* BUTTON STYLE 3 ENDS */
