@@ -2,6 +2,7 @@
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    font-size-adjust: none; /* Disable font size adjustment from Firefox */
     /* outline: 1px solid #ff0000; */
 }
 
@@ -93,7 +94,7 @@
 
 /* BUTTON STYLE 3 STARTS */
 .button-style-3 {
-    background-color: #00c43b;
+    background-color: #00a759;
     border-style: solid;
     border-width: 2px;
     color: #ffffff;
@@ -105,7 +106,7 @@
 }
 
 .button-style-3:hover {
-    background-color: #00eb46;
+    background-color: #00c96b;
     border-style: solid;
     border-width: 2px;
     color: #ffffff;
@@ -117,7 +118,7 @@
 }
 
 .button-style-3:active {
-    background-color: #005a1b;
+    background-color: #006636;
     border-style: solid;
     border-width: 2px;
     color: #ffffff;
