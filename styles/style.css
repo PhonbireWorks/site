@@ -3,6 +3,14 @@
     margin: 0;
     padding: 0;
     /* font-size-adjust: none; */
+    -webkit-text-size-adjust: 100%;
+    /* Chrome, Safari */
+    -moz-text-size-adjust: 100%;
+    /* Firefox */
+    -ms-text-size-adjust: 100%;
+    /* Internet Explorer */
+    text-size-adjust: 100%;
+    /* Standard */
     /* outline: 1px solid #ff0000; */
 }
 
@@ -46,6 +54,7 @@
     border-right-color: #eeeeee;
     padding: 2px;
 }
+
 /* BUTTON STYLE 1 ENDS */
 
 
@@ -87,6 +96,7 @@
     border-right-color: #a22900;
     padding: 8px;
 }
+
 /* BUTTON STYLE 2 ENDS */
 
 
@@ -128,4 +138,5 @@
     border-right-color: #007523;
     padding: 8px;
 }
+
 /* BUTTON STYLE 3 ENDS */
