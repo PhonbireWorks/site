@@ -5,9 +5,9 @@
 <head>
     <meta charset="UTF-8">
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
-    <title>Warren Van Zuydam Website - Shop</title>
-    <meta name="description" content="Warren Van Zuydam digital shop">
-    <meta name="keywords" content="Warren Van Zuydam, PhonbireWorks, shop, LibreOffice templates, SVG templates">
+    <title>PhonbireWorks Website - Shop</title>
+    <meta name="description" content="Browse all kinds of templates for your everyday needs - personal, or business-related">
+    <meta name="keywords" content="Warren Van Zuydam, PhonbireWorks, shop, LibreOffice templates, SVG templates, ODG templates">
     <meta name="author" content="Warren Van Zuydam">
     <link rel="icon" type="image/x-icon" href="assets/logo.svg">
     <link rel="stylesheet" href="styles/style.css">
@@ -19,7 +19,7 @@
 
 <body style="background-color: #5c5c5c;">
     <!-- MAIN WEBPAGE BOX STARTS -->
-    <div style="width: 900px; background-color: #bebebe; margin: auto; border-style:ridge; border-width: 5px;">
+    <div style="width: 900px; background-color: #ffffff; margin: auto; border-style:ridge; border-width: 5px;">
 
 
 
@@ -79,7 +79,7 @@
 
             </ul> -->
             <div style="display: flex; justify-content: center;">
-                <a href="">
+                <a href="category_pages/journals/journals.html">
                     <div
                         style="display: flex; flex-direction: column; background-color: #ffffff; width: 200px; margin: 20px;">
                         <img src="category_pages/journals/design_1/1.png" alt="" style="width: 200px;">
@@ -212,7 +212,32 @@
             <!-- MAIN WEBPAGE BOX ENDS -->
         </main>
         <footer>
-
+            <!--FORM STARTS-->
+            <div
+                style="display: flex; flex-direction: column; align-items: center; width: 900px; height: auto; background-color: #272727;">
+                <form style="display: flex; flex-direction: column; align-items: center"
+                    action="https://formspree.io/f/xnnqalvd" method="POST">
+                    <label style="color: #ffffff" for="fname">First Name*</label>
+                    <input style="width: 100%" type="text" id="fname" name="firstname" placeholder="Your name.."
+                        required>
+                    <br>
+                    <label style="color: #ffffff" for="lname">Last Name*</label>
+                    <input style="width: 100%" type="text" id="lname" name="lastname" placeholder="Your last name.."
+                        required>
+                    <br>
+                    <label style="color: #ffffff" for="email">Email*</label>
+                    <input style="width: 100%" type="email" id="email" name="email" placeholder="Your email.." required>
+                    <br>
+                    <label style="color: #ffffff" for="subject">Your Message*</label>
+                    <textarea style="width: 100%" id="subject" name="subject" placeholder="Write something.."
+                        style="height:20rem" required></textarea>
+                    <br>
+                    <input style="width: 80%" type="submit" value="Submit" class="button-style-1">
+                    <br><br><br>
+                </form>
+            </div>
+            <!--FORM ENDS-->
+            <iframe src="copyright.html" style="width:900px; height: 16px; border:none;" scrolling="no"></iframe>
         </footer>
     </div>
     </div>
