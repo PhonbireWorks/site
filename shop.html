@@ -1,246 +1,398 @@
 <!DOCTYPE html>
-<html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
-    <title>PhonbireWorks Website - Shop</title>
-    <meta name="description" content="Browse all kinds of templates for your everyday needs - personal, or business-related">
-    <meta name="keywords" content="Warren Van Zuydam, PhonbireWorks, shop, LibreOffice templates, SVG templates, ODG templates">
-    <meta name="author" content="Warren Van Zuydam">
-    <link rel="icon" type="image/x-icon" href="assets/logo.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PhonbireWorks Shop</title>
+    <link rel="icon" type="image/x-icon" href="images/logo pfp.svg">
     <link rel="stylesheet" href="styles/style.css">
-
-
-
-    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="animate_on_view.js"></script> <!-- SCRIPT FOR HANDLING ANIMATIONS WHEN IN VIEW -->
+    <!-- <script>history.replaceState("", "", "shop");</script> THIS REMOVES THE ".HTML" EXTENTION FROM YOUR URLS -->
 </head>
 
-<body style="background-color: #5c5c5c;">
-    <!-- MAIN WEBPAGE BOX STARTS -->
-    <div style="width: 900px; background-color: #ffffff; margin: auto; border-style:ridge; border-width: 5px;">
+<body>
 
 
 
-        <div
-            style="width: 880px; height: auto; background-color: #272727; display: flex; justify-content: center; padding: 10px">
-            <img src="assets/logo.svg" alt="" style="height: 50px">
-            <img src="assets/logo2.svg" alt="" style="height: 50px">
+    <!-- HEADER STARTS -->
+    <!-- <header class="sticky" style="box-shadow: 0 0 3rem -0rem #00000068">
+        <div style="display: flex; justify-content: space-between">
+            <img src="images/logo.svg" alt="Sample GIF" style="display: flex; align-self: center; height: 10vh" id="randomImage" class="no-right-click">
+            <script>
+                document.addEventListener('contextmenu', function (e) {
+                    e.preventDefault();
+                }, false);
+            </script>
+            <div style="display: flex; flex-direction: column; justify-content: center; flex-grow: 1;">
+                <h1 style="font-size: 2rem; color: #000000; font-family: Bodoni MT;" class="header-logo">PHONBIREWORKS</h1>
+                <nav>
+                    <div class="hamburger fade-in" id="hamburger">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+                    <ul class="nav-menu" id="nav-menu">
+                        <li><a href="index.html" class="home" style="font-size: 1rem">HOME</a></li>
+                        <li><a href="about.html" class="about" style="font-size: 1rem">ABOUT</a></li>
+                        <li><a href="shop.html" class="shop" style="font-size: 1rem; color:#ff5e00">SHOP</a></li>
+                        <li><a href="blog.html" class="shop" style="font-size: 1rem">BLOG</a></li>
+                        <li><a href="shop.html" class="shop" style="font-size: 1rem">PORTFOLIO</a></li>
+                        <li><a href="contact.html" class="contact" style="font-size: 1rem">CONTACT</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header> -->
+    <!-- HEADER ENDS -->
+
+
+    <!-- NAV STARTS -->
+    <nav class="sticky" style="box-shadow: 0 0 3rem -0rem #00000068">
+        <img src="images/logo.svg" alt="" style="height: 3rem" class="logo">
+        <ul class="nav-list">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="shop.html">SHOP</a></li>
+            <li><a href="blog.html">BLOG</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+            <!-- <li class="dropdown">
+                <a href="shop.html">SHOP <span>&#9662;</span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">MULTI-PDF JOURNALS</a></li>
+                    <li><a href="#">RESUME TEMPLATES</a></li>
+                    <li><a href="#">DAILY PLANNERS</a></li>
+                    <li><a href="#">WEEKLY PLANNERS</a></li>
+                </ul>
+            </li> -->
+        </ul>
+
+        <div class="menu-container">
+            <div class="menu-icon">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+    </nav>
+    <!-- NAV ENDS -->
+
+
+
+
+
+    <main><!-- MAIN STARTS -->
+
+        <div class="fab-container">
+            <button onclick="topFunction()" id="topBtn" class="fab"></button>
         </div>
 
-        <!-- NAV STARTS -->
-        <nav style="background-color: #272727; padding: 10px">
-            <a href="index.html" style="font-size: 16px; text-decoration: none; color: #ffffff; margin-left: 10px;"
-                aria-label="">Home</a>
-            <a href="about.html" style="font-size: 16px; text-decoration: none; color: #ffffff; margin-left: 10px;"
-                aria-label="">About Me</a>
-            <a href="shop.html" style="font-size: 16px; text-decoration: none; color: #FF5E00; margin-left: 10px;"
-                aria-label="">My Shop</a>
-            <a href="blog.html" style="font-size: 16px; text-decoration: none; color: #ffffff; margin-left: 10px;"
-                aria-label="">My Blog</a>
-            <a href="" style="font-size: 16px; text-decoration: none; color: #ffffff; margin-left: 10px;"
-                aria-label="">My Portfolio</a>
-            <a href="contact.html" style="font-size: 16px; text-decoration: none; color: #ffffff; margin-left: 10px;"
-                aria-label="">Contact Me</a>
-        </nav>
-        <!-- NAV ENDS -->
 
-        <main>
+        <!-- POPUP ADVERT STARTS -->
+        <div class="close">
+            <div id="popup" class="popup">
+                <a href="category_pages/journals/journals.html"><img src="popup_adverts/ad2.png" alt=""></a>
+            </div>
+        </div>
+        <!-- POPUP ADVERT ENDS -->
 
 
-            <!-- <h1 style="margin-left: 10px; margin-right: 10px; font-size: 32px; color: #000000;">Browse Template
-                Categories</h1>
-            <ul style="margin-left: 40px; margin-right: 10px">
-                <li><a href="blogs/5 January, 2025.html" aria-label="5 January, 2025: The Problem With AI"
-                        style="font-size: 16px;">Multi-PDF Journals</a></li>
-                <li><a href="blogs/5 January, 2025.html" aria-label="5 January, 2025: The Problem With AI"
-                        style="font-size: 16px;">Product mockup Templates</a></li>
-                <li><a href="blogs/5 January, 2025.html" aria-label="5 January, 2025: The Problem With AI"
-                        style="font-size: 16px;">Resume Templates</a></li>
-                <li><a href="blogs/5 January, 2025.html" aria-label="5 January, 2025: The Problem With AI"
-                        style="font-size: 16px;">Quote Templates</a></li>
-                <li><a href="blogs/5 January, 2025.html" aria-label="5 January, 2025: The Problem With AI"
-                        style="font-size: 16px;">Invoice Templates</a></li>
-                <li><a href="blogs/5 January, 2025.html" aria-label="5 January, 2025: The Problem With AI"
-                        style="font-size: 16px;">Daily Planners</a></li>
-                <li><a href="blogs/5 January, 2025.html" aria-label="5 January, 2025: The Problem With AI"
-                        style="font-size: 16px;">Weekly Planners</a></li>
-                <li><a href="blogs/5 January, 2025.html" aria-label="5 January, 2025: The Problem With AI"
-                        style="font-size: 16px;">Monthly Planners</a></li>
-                <li><a href="blogs/5 January, 2025.html" aria-label="5 January, 2025: The Problem With AI"
-                        style="font-size: 16px;">Yearly Planners</a></li>
-                <li><a href="blogs/5 January, 2025.html" aria-label="5 January, 2025: The Problem With AI"
-                        style="font-size: 16px;">Spreadsheets</a></li>
-                <li><a href="blogs/5 January, 2025.html" aria-label="5 January, 2025: The Problem With AI"
-                        style="font-size: 16px;">Vector Graphic Element Packs</a></li>
-                <li><a href="blogs/5 January, 2025.html" aria-label="5 January, 2025: The Problem With AI"
-                        style="font-size: 16px;">Brochure Templates</a></li>
 
-            </ul> -->
-            <div style="display: flex; justify-content: center;">
-                <a href="category_pages/journals/journals.html">
-                    <div
-                        style="display: flex; flex-direction: column; background-color: #ffffff; width: 200px; margin: 20px;">
-                        <img src="category_pages/journals/design_1/1.png" alt="" style="width: 200px;">
-                        <p style="font-size: 16px; margin-left: 10px; margin-right: 10px">
-                            Multi-PDF Journals
-                        </p>
+        <!-- <section style="background-color: #ffffff; display: flex; flex-direction: column; padding: 2%">
+
+            <h1 style="color: #000000; font-size: 2rem; align-self: center;" class="text2">My Ebook Shop (Coming Soon!)</h1>
+            <br>
+            <p style="margin: auto; text-align: center">Want to upload your own ebooks?</p>
+            <br>
+            <a href="../../contact.html" style="align-self: center"><button class="button1">Get In Touch</button></a>
+            <br>
+            <div style="display: flex; overflow-x: auto;" class="ebook_container_parent">
+
+
+
+
+                <div style="background-color: #ffffff; text-align: center; margin-right: 1rem">
+                    <a href=""><img src="mockups/ebook_covers/A Guide To Graphic Design.png" style="max-height: 50vh;"></a>
+                    <div style="display: flex; flex-direction: row; justify-content: space-between; align-items: center">
+                        <p style="color: #4c4c4c; font-size: 2rem; margin: 1%" class="text2">PDF, 162 pages</p>
                     </div>
-                </a>
-
-                <a href="">
-                    <div
-                        style="display: flex; flex-direction: column; background-color: #ffffff; width: 200px; margin: 20px;">
-                        <img src="assets/coming_soon.png" alt="" style="width: 200px;">
-                        <p style="font-size: 16px; margin-left: 10px; margin-right: 10px">
-                            Product mockup Templates
-                        </p>
+                    <div style="display: flex; flex-direction: row; justify-content: space-between; align-items: center">
+                        <p style="color: #4c4c4c; font-size: 2rem; margin: 1%" class="text2"><s>$10.00</s></p>
+                        <p style="color: #ff5e00; font-size: 2rem; margin: 1%" class="text2">$6.00</p>
                     </div>
-                </a>
+                    <a href="#" target="_blank"><button class="button3 shake-horizontal">Buy Now</button></a>
+                </div>
 
-                <a href="category_pages/resume_templates/resume_templates.html">
-                    <div
-                        style="display: flex; flex-direction: column; background-color: #ffffff; width: 200px; margin: 20px;">
-                        <img src="category_pages/resume_templates/design_1/1.png" alt="" style="width: 200px;">
-                        <p style="font-size: 16px; margin-left: 10px; margin-right: 10px">
-                            Resume Templates
-                        </p>
-                    </div>
-                </a>
+                <br><br><br><br>
 
             </div>
+        </section> -->
 
 
 
 
+        <section style="background-color: #ffffff; display: flex; flex-direction: column; align-items: center; padding: 2%">
+            <br>
+            <h1 style="color: #000000; font-size: 3rem; text-align: center" class="text1">DIGITAL TEMPLATE SHOP</h1>
+            <br>
+            <div style="text-align: center"> <!-- WTF?! I GUESS LINKED IMAGES COUNT AS TEXT. OKEEE.. -->
+                <a href="https://www.canva.com/" target="_blank"><img src="images/canva.svg" alt="" style="width: 20%"></a>
+                <a href="https://www.libreoffice.org/" target="_blank"><img src="images/libre-office-suite.svg" alt="" style="width: 20%"></a>
+                <a href="https://inkscape.org/" target="_blank"><img src="images/inkscape.svg" alt="" style="width: 20%"></a>
+            </div>
+            <br>
+            <p style="color: #000000; margin: auto; text-align: center">Not finding what you're looking for?</p>
+            <br>
+            <a href="contact.html" style="align-self: center"><button class="button5">Get In Touch</button></a>
+            <br>
+            <div style="display: flex; flex-wrap: wrap; justify-content: space-evenly">
 
 
-
-            <div style="display: flex; justify-content: center;">
-                <a href="">
-                    <div
-                        style="display: flex; flex-direction: column; background-color: #ffffff; width: 200px; margin: 20px;">
-                        <img src="assets/coming_soon.png" alt="" style="width: 200px;">
-                        <p style="font-size: 16px; margin-left: 10px; margin-right: 10px">
-                            Quote Templates
-                        </p>
+                <div class="template_item">
+                    <div id="magnifier">
                     </div>
-                </a>
-
-                <a href="">
-                    <div
-                        style="display: flex; flex-direction: column; background-color: #ffffff; width: 200px; margin: 20px;">
-                        <img src="assets/coming_soon.png" alt="" style="width: 200px;">
-                        <p style="font-size: 16px; margin-left: 10px; margin-right: 10px">
-                            Invoice Templates
-                        </p>
+                    <a href="category_pages/journals/journals.html"><img src="category_pages/journals/design_1/1.png" style="max-width: 100%;"></a>
+                    <div style="display: flex; flex-direction: row; justify-content: space-between; align-items: center">
+                        <p style="color: #000000; font-size: 2rem; margin: 5%; hyphens: auto; word-break: break-word; overflow-wrap: break-word;" class="text2">
+                            Multi-PDF Journals</p>
                     </div>
-                </a>
+                </div>
 
-                <a href="">
-                    <div
-                        style="display: flex; flex-direction: column; background-color: #ffffff; width: 200px; margin: 20px;">
-                        <img src="assets/coming_soon.png" alt="" style="width: 200px;">
-                        <p style="font-size: 16px; margin-left: 10px; margin-right: 10px">
-                            Daily Planners
-                        </p>
+                <div class="template_item">
+                    <a href=""><img src="images/coming_soon.png" style="max-width: 100%;"></a>
+                    <div style="display: flex; flex-direction: row; justify-content: space-between; align-items: center">
+                        <p style="color: #000000; font-size: 2rem; margin: 5%; hyphens: auto; word-break: break-word; overflow-wrap: break-word;" class="text2">
+                            Product mockup Templates</p>
                     </div>
-                </a>
+                </div>
+
+                <div class="template_item">
+                    <a href="category_pages/resume_templates/resume_templates.html"><img src="category_pages/resume_templates/design_1/1.png" style="max-width: 100%;"></a>
+                    <div style="display: flex; flex-direction: row; justify-content: space-between; align-items: center">
+                        <p style="color: #000000; font-size: 2rem; margin: 5%; hyphens: auto; word-break: break-word; overflow-wrap: break-word;" class="text2">
+                            Resume Templates</p>
+                    </div>
+                </div>
+
+                <div class="template_item">
+                    <a href=""><img src="images/coming_soon.png" style="max-width: 100%;"></a>
+                    <div style="display: flex; flex-direction: row; justify-content: space-between; align-items: center">
+                        <p style="color: #000000; font-size: 2rem; margin: 5%; hyphens: auto; word-break: break-word; overflow-wrap: break-word;" class="text2">
+                            Quote Templates</p>
+                    </div>
+                </div>
+
+                <div class="template_item">
+                    <a href=""><img src="images/coming_soon.png" style="max-width: 100%;"></a>
+                    <div style="display: flex; flex-direction: row; justify-content: space-between; align-items: center">
+                        <p style="color: #000000; font-size: 2rem; margin: 5%; hyphens: auto; word-break: break-word; overflow-wrap: break-word;" class="text2">
+                            Invoice Templates</p>
+                    </div>
+                </div>
+
+                <div class="template_item">
+                    <a href=""><img src="images/coming_soon.png" style="max-width: 100%;"></a>
+                    <div style="display: flex; flex-direction: row; justify-content: space-between; align-items: center">
+                        <p style="color: #000000; font-size: 2rem; margin: 5%; hyphens: auto; word-break: break-word; overflow-wrap: break-word;" class="text2">
+                            Daily Planners</p>
+                    </div>
+                </div>
+
+                <div class="template_item">
+                    <a href=""><img src="images/coming_soon.png" style="max-width: 100%;"></a>
+                    <div style="display: flex; flex-direction: row; justify-content: space-between; align-items: center">
+                        <p style="color: #000000; font-size: 2rem; margin: 5%; hyphens: auto; word-break: break-word; overflow-wrap: break-word;" class="text2">
+                            Weekly Planners</p>
+                    </div>
+                </div>
+
+                <div class="template_item">
+                    <a href="category_pages/monthly_planners/monthly_planners.html"><img src="category_pages/monthly_planners/design_1/1.png" style="max-width: 100%;"></a>
+                    <div style="display: flex; flex-direction: row; justify-content: space-between; align-items: center">
+                        <p style="color: #000000; font-size: 2rem; margin: 5%; hyphens: auto; word-break: break-word; overflow-wrap: break-word;" class="text2">
+                            Monthly Planners</p>
+                    </div>
+                </div>
+
+                <div class="template_item">
+                    <a href=""><img src="images/coming_soon.png" style="max-width: 100%;"></a>
+                    <div style="display: flex; flex-direction: row; justify-content: space-between; align-items: center">
+                        <p style="color: #000000; font-size: 2rem; margin: 5%; hyphens: auto; word-break: break-word; overflow-wrap: break-word;" class="text2">
+                            Yearly Planners</p>
+                    </div>
+                </div>
+
+                <div class="template_item">
+                    <a href=""><img src="images/coming_soon.png" style="max-width: 100%;"></a>
+                    <div style="display: flex; flex-direction: row; justify-content: space-between; align-items: center">
+                        <p style="color: #000000; font-size: 2rem; margin: 5%; hyphens: auto; word-break: break-word; overflow-wrap: break-word;" class="text2">
+                            Desk Pads</p>
+                    </div>
+                </div>
+
+                <div class="template_item">
+                    <a href=""><img src="images/coming_soon.png" style="max-width: 100%;"></a>
+                    <div style="display: flex; flex-direction: row; justify-content: space-between; align-items: center">
+                        <p style="color: #000000; font-size: 2rem; margin: 5%; hyphens: auto; word-break: break-word; overflow-wrap: break-word;" class="text2">
+                            Spreadsheets</p>
+                    </div>
+                </div>
+
+                <div class="template_item">
+                    <a href=""><img src="images/coming_soon.png" style="max-width: 100%;"></a>
+                    <div style="display: flex; flex-direction: row; justify-content: space-between; align-items: center">
+                        <p style="color: #000000; font-size: 2rem; margin: 5%; hyphens: auto; word-break: break-word; overflow-wrap: break-word;" class="text2">
+                            Vector Graphic Element Packs</p>
+                    </div>
+                </div>
+
+                <div class="template_item">
+                    <a href=""><img src="images/coming_soon.png" style="max-width: 100%;"></a>
+                    <div style="display: flex; flex-direction: row; justify-content: space-between; align-items: center">
+                        <p style="color: #000000; font-size: 2rem; margin: 5%; hyphens: auto; word-break: break-word; overflow-wrap: break-word;" class="text2">
+                            Brochure Templates</p>
+                    </div>
+                </div>
+
+                <div class="template_item">
+                    <a href=""><img src="images/coming_soon.png" style="max-width: 100%;"></a>
+                    <div style="display: flex; flex-direction: row; justify-content: space-between; align-items: center">
+                        <p style="color: #000000; font-size: 2rem; margin: 5%; hyphens: auto; word-break: break-word; overflow-wrap: break-word;" class="text2">
+                            Business Card Templates</p>
+                    </div>
+                </div>
+
+                <div class="template_item">
+                    <a href=""><img src="images/coming_soon.png" style="max-width: 100%;"></a>
+                    <div style="display: flex; flex-direction: row; justify-content: space-between; align-items: center">
+                        <p style="color: #000000; font-size: 2rem; margin: 5%; hyphens: auto; word-break: break-word; overflow-wrap: break-word;" class="text2">
+                            Slideshow Templates</p>
+                    </div>
+                </div>
+
+                <div class="template_item">
+                    <a href=""><img src="images/coming_soon.png" style="max-width: 100%;"></a>
+                    <div style="display: flex; flex-direction: row; justify-content: space-between; align-items: center">
+                        <p style="color: #000000; font-size: 2rem; margin: 5%; hyphens: auto; word-break: break-word; overflow-wrap: break-word;" class="text2">
+                            Fonts</p>
+                    </div>
+                </div>
+
+                <div class="template_item">
+                    <a href=""><img src="images/coming_soon.png" style="max-width: 100%;"></a>
+                    <div style="display: flex; flex-direction: row; justify-content: space-between; align-items: center">
+                        <p style="color: #000000; font-size: 2rem; margin: 5%; hyphens: auto; word-break: break-word; overflow-wrap: break-word;" class="text2">
+                            Ebook Templates</p>
+                    </div>
+                </div>
+
+                <div class="template_item">
+                    <a href=""><img src="images/coming_soon.png" style="max-width: 100%;"></a>
+                    <div style="display: flex; flex-direction: row; justify-content: space-between; align-items: center">
+                        <p style="color: #000000; font-size: 2rem; margin: 5%; hyphens: auto; word-break: break-word; overflow-wrap: break-word;" class="text2">
+                            Budget Planners</p>
+                    </div>
+                </div>
+
+                <div class="template_item">
+                    <a href=""><img src="images/coming_soon.png" style="max-width: 100%;"></a>
+                    <div style="display: flex; flex-direction: row; justify-content: space-between; align-items: center">
+                        <p style="color: #000000; font-size: 2rem; margin: 5%; hyphens: auto; word-break: break-word; overflow-wrap: break-word;" class="text2">
+                            Meal Planners</p>
+                    </div>
+                </div>
+
+                <div class="template_item">
+                    <a href=""><img src="images/coming_soon.png" style="max-width: 100%;"></a>
+                    <div style="display: flex; flex-direction: row; justify-content: space-between; align-items: center">
+                        <p style="color: #000000; font-size: 2rem; margin: 5%; hyphens: auto; word-break: break-word; overflow-wrap: break-word;" class="text2">
+                            Home Cleaning Checklists</p>
+                    </div>
+                </div>
+
+                <div class="template_item">
+                    <a href=""><img src="images/coming_soon.png" style="max-width: 100%;"></a>
+                    <div style="display: flex; flex-direction: row; justify-content: space-between; align-items: center">
+                        <p style="color: #000000; font-size: 2rem; margin: 5%; hyphens: auto; word-break: break-word; overflow-wrap: break-word;" class="text2">
+                            Website Framework Templates</p>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+
 
             </div>
+        </section>
 
 
 
 
-            <div style="display: flex; justify-content: center;">
-                <a href="">
-                    <div
-                        style="display: flex; flex-direction: column; background-color: #ffffff; width: 200px; margin: 20px;">
-                        <img src="assets/coming_soon.png" alt="" style="width: 200px;">
-                        <p style="font-size: 16px; margin-left: 10px; margin-right: 10px">
-                            Weekly Planners
-                        </p>
-                    </div>
-                </a>
 
-                <a href="">
-                    <div
-                        style="display: flex; flex-direction: column; background-color: #ffffff; width: 200px; margin: 20px;">
-                        <img src="category_pages/monthly_planners/design_1/1.png" alt="" style="width: 200px;">
-                        <p style="font-size: 16px; margin-left: 10px; margin-right: 10px">
-                            Monthly Planners
-                        </p>
-                    </div>
-                </a>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script>
+            const swiper = new Swiper('.swiper', {
+                loop: true,
+                // If we need pagination
+                // pagination: {
+                //     el: '.swiper-pagination',
+                //     clickable: true,
+                // },
 
-                <a href="">
-                    <div
-                        style="display: flex; flex-direction: column; background-color: #ffffff; width: 200px; margin: 20px;">
-                        <img src="assets/coming_soon.png" alt="" style="width: 200px;">
-                        <p style="font-size: 16px; margin-left: 10px; margin-right: 10px">
-                            Yearly Planners
-                        </p>
-                    </div>
-                </a>
-
-            </div>
+                // Navigation arrows
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+            });
+        </script>
 
 
 
 
 
 
+    </main><!-- MAIN ENDS -->
 
+    <!-- FOOTER STARTS -->
+    <footer class="footer_section">
+        <p style="max-width: 50rem; text-align: left; color:#ffffff; padding: 1em; margin: auto">
+            PhonbireWorks is the go-to source for high-quality digital products and services, from templates,
+            to ebooks, to vector traced graphics. My goal is to provide customizable solutions tailored to your
+            needs. I am passionate about creating digital products and services that make a difference.
+        </p>
+        <p style="font-size: 2rem; max-width: 50rem; text-align: center; color:#ffffff; padding-bottom: 1em; margin: auto">
+            Get In Touch
+        </p>
+        <!--FORM STARTS-->
+        <div style="display: flex; flex-direction: column; align-items: center; width: 100%; height: auto; margin: auto">
+            <form style="display: flex; flex-direction: column; align-items: center" action="https://formspree.io/f/xnnqalvd" method="POST">
+                <label style="color: #ffffff" for="fname">First Name*</label>
+                <input style="width: 100%" type="text" id="fname" name="firstname" placeholder="Your name.." required>
+                <br>
+                <label style="color: #ffffff" for="lname">Last Name*</label>
+                <input style="width: 100%" type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+                <br>
+                <label style="color: #ffffff" for="email">Email*</label>
+                <input style="width: 100%" type="email" id="email" name="email" placeholder="Your email.." required>
+                <br>
+                <label style="color: #ffffff" for="subject">Your Message*</label>
+                <textarea style="width: 100%" id="subject" name="subject" placeholder="Write something.." style="height:20rem" required></textarea>
+                <input style="width: 80%; margin: 1rem;" type="submit" value="Submit" class="button5">
+            </form>
+        </div>
+        <!--FORM ENDS-->
+        <br><br><br>
+        <iframe src="copyright.html" style="width:100%; height: 3rem; border:none;" scrolling="no"></iframe>
+    </footer>
+    <!-- FOOTER ENDS -->
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            <!-- MAIN WEBPAGE BOX ENDS -->
-        </main>
-        <footer>
-            <!--FORM STARTS-->
-            <div
-                style="display: flex; flex-direction: column; align-items: center; width: 900px; height: auto; background-color: #272727;">
-                <form style="display: flex; flex-direction: column; align-items: center"
-                    action="https://formspree.io/f/xnnqalvd" method="POST">
-                    <label style="color: #ffffff" for="fname">First Name*</label>
-                    <input style="width: 100%" type="text" id="fname" name="firstname" placeholder="Your name.."
-                        required>
-                    <br>
-                    <label style="color: #ffffff" for="lname">Last Name*</label>
-                    <input style="width: 100%" type="text" id="lname" name="lastname" placeholder="Your last name.."
-                        required>
-                    <br>
-                    <label style="color: #ffffff" for="email">Email*</label>
-                    <input style="width: 100%" type="email" id="email" name="email" placeholder="Your email.." required>
-                    <br>
-                    <label style="color: #ffffff" for="subject">Your Message*</label>
-                    <textarea style="width: 100%" id="subject" name="subject" placeholder="Write something.."
-                        style="height:20rem" required></textarea>
-                    <br>
-                    <input style="width: 80%" type="submit" value="Submit" class="button-style-1">
-                    <br><br><br>
-                </form>
-            </div>
-            <!--FORM ENDS-->
-            <iframe src="copyright.html" style="width:900px; height: 16px; border:none;" scrolling="no"></iframe>
-        </footer>
-    </div>
-    </div>
+    <script src="script.js"></script>
 </body>
 
 </html>
