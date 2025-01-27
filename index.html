@@ -1,240 +1,188 @@
 <!DOCTYPE html>
+<html>
 <html lang="en">
 
 <head>
-
-    <!-- ESSENTIALS STARTS -->
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PhonbireWorks - Home</title>
-    <link rel="icon" type="image/x-icon" href="images/logo pfp.svg">
-    <link rel="stylesheet" href="styles/style.css">
-    <!-- ESSENTIALS ENDS -->
-
-    <!-- SCRIPTS & OTHER STUFF STARTS -->
-    <script src="animate_on_view.js"></script>
-    <!-- THE FOLLOWING REMOVES THE "INDEX.HTML" COMPLETELY. FOR SOME REASON, ONLY THE INDEX PAGE DOESN'T LIKE THE OTHER PAGE'S SCRIPTS WHICH RENAMES THE PAGE -->
-    <!-- <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            if (window.location.pathname.endsWith("index.html")) {
-                var newPath = window.location.pathname.replace("index.html", "");
-                history.replaceState("", "", newPath);
-            }
-        });
-    </script> -->
-
-    <!-- SCRIPTS & OTHER STUFF ENDS -->
-
-    <!-- GOOGLE SEO STUFF STARTS -->
-    <meta name="google-site-verification" content="vwYMQ-wRvYRkFHBVw7M8SB17T_WKlH5fV7XAVc_c3qs" />
-    <meta name="keywords"
-        content="Warren Van Zuydam, PhonbireWorks, digital templates, ODG templates, SVG templates, PDF templates, LibreOffice templates">
-    <meta name="description"
-        content="Explore high-quality SVG digital products and services by PhonbireWorks, from resume templates, to monthly planners and e-book page templates. Contact us for custom projects.">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>PhonbireWorks Website - Home</title>
+    <meta name="description" content="I Sell Digital Products And Services">
+    <meta name="keywords" content="Warren Van Zuydam, PhonbireWorks, digital templates, LibreOffice templates">
     <meta name="author" content="Warren Van Zuydam">
-    <!-- <meta name="keywords" content="Warren Van Zuydam, PhonbireWorks, digital templates, downloadable SVG, digital downloads"> -->
-    <link rel="canonical" href="https://phonbireworks.github.io/website/">
-    <!-- GOOGLE SEO STUFF ENDS -->
+    <link rel="icon" type="image/x-icon" href="assets/logo.svg">
+    <link rel="stylesheet" href="styles/style.css">
 
-    <!-- MAINTENACE PAGE SCRIPT STARTS -->
-    <!-- <script> // Redirect to maintenance page
-window.location.replace("maintenance.html");
-</script> -->
+
+
+    <script src="script.js"></script>
+
+<!-- MAINTENACE PAGE SCRIPT STARTS -->
+    <script> // Redirect to maintenance page
+window.location.replace("https://phonbireworks.github.io/website/index.html");
+</script>
     <!-- MAINTENACE PAGE SCRIPT ENDS -->
+
 
 </head>
 
-<body>
+<body style="background-color: #5c5c5c;">
+    <!-- MAIN WEBPAGE BOX STARTS -->
+    <div style="width: 900px; background-color: #272727; margin: auto; border-style:ridge; border-width: 5px;">
 
-    <!-- HEADER STARTS -->
-    <!-- <header class="sticky" style="box-shadow: 0 0 3rem -0rem #00000068">
-        <div style="display: flex; justify-content: space-between">
-            <img src="images/logo.svg" alt="PhonbireWorks" style="display: flex; align-self: center; height: 10vh"
-                id="randomImage" class="no-right-click">
-            <script>
-                document.addEventListener('contextmenu', function (e) {
-                    e.preventDefault();
-                }, false);
-            </script>
-            <div style="display: flex; flex-direction: column; justify-content: center; flex-grow: 1;">
-                <h1 style="font-size: 2rem; color: #000000; font-family: Bodoni MT;" class="header-logo">PHONBIREWORKS
-                </h1>
-                <nav>
-                    <div class="hamburger fade-in" id="hamburger">
-                        <span class="bar"></span>
-                        <span class="bar"></span>
-                        <span class="bar"></span>
-                    </div>
-                    <ul class="nav-menu" id="nav-menu">
-                        <li><a href="index.html" class="home" style="font-size: 1rem; color:#ff5e00">HOME</a></li>
-                        <li><a href="about.html" class="about" style="font-size: 1rem">ABOUT</a></li>
-                        <li><a href="shop.html" class="shop" style="font-size: 1rem">SHOP</a></li>
-                        <li><a href="blog.html" class="shop" style="font-size: 1rem">BLOG</a></li>
-                        <li><a href="shop.html" class="shop" style="font-size: 1rem">PORTFOLIO</a></li>
-                        <li><a href="contact.html" class="contact" style="font-size: 1rem">CONTACT</a></li>
-                    </ul>
-                </nav>
+
+        <!-- NAV STARTS -->
+        <!-- <nav>
+            <div style="width: 900px; height: 80px; background-color: #ffffff; position: relative;">
+                <img src="assets/logo.svg" alt="" style="width: 60px; left: 10px; top: 10px; position:absolute">
+                <img src="assets/logo2.svg" alt="" style="width: 300px; left: 295px; top: 10px; position:absolute">
+                <img src="assets/hamburger.svg" alt=""
+                    style="width: 60px; left: 790px; top: 8px; cursor: pointer; position:absolute"
+                    onclick="toggleDiv()">
             </div>
-        </div>
-    </header> -->
-    <!-- HEADER ENDS -->
-
-
-
-    <!-- NAV STARTS -->
-    <nav class="sticky" style="box-shadow: 0 0 3rem -0rem #00000068">
-        <img src="images/logo.svg" alt="" style="height: 3rem" class="logo">
-        <ul class="nav-list">
-            <li><a href="index.html">HOME</a></li>
-            <li><a href="about.html">ABOUT</a></li>
-            <li><a href="shop.html">SHOP</a></li>
-            <li><a href="blog.html">BLOG</a></li>
-            <li><a href="contact.html">CONTACT</a></li>
-            <!-- <li class="dropdown">
-                <a href="shop.html">SHOP <span>&#9662;</span></a>
-                <ul class="dropdown-menu">
-                    <li><a href="#">MULTI-PDF JOURNALS</a></li>
-                    <li><a href="#">RESUME TEMPLATES</a></li>
-                    <li><a href="#">DAILY PLANNERS</a></li>
-                    <li><a href="#">WEEKLY PLANNERS</a></li>
-                </ul>
-            </li> -->
-        </ul>
-
-        <div class="menu-container">
-            <div class="menu-icon">
-                <div class="bar"></div>
-                <div class="bar"></div>
-                <div class="bar"></div>
+            <div style="width: 900px; background-color: #bebebe; display: none; flex-direction: column;" id="menu">
+                <a href="index.html" style="font-size: 32px; text-decoration: none;"
+                    aria-label="" class="button-style-1">Home</a>
+                <a href="about.html" style="font-size: 32px; text-decoration: none;"
+                    aria-label="Link to Warren's about page" class="button-style-1">About</a>
+                <a href="shop.html" style="font-size: 32px; text-decoration: none;"
+                    aria-label="Link to Warren's about page" class="button-style-1">Shop</a>
+                <a href="blog.html" style="font-size: 32px; text-decoration: none;"
+                    aria-label="Link to Warren's blog page" class="button-style-1">Blog</a>
+                <a href="" style="font-size: 32px; text-decoration: none;"
+                    aria-label="Link to Warren's YouTube videos within Warren's website"
+                    class="button-style-1">Portfolio</a>
+                <a href="contact.html" style="font-size: 32px; text-decoration: none;"
+                    aria-label="Link to Warren's YouTube videos within Warren's website"
+                    class="button-style-1">Contact</a>
             </div>
-    </nav>
-    <!-- NAV ENDS -->
+        </nav> -->
+        <!-- NAV ENDS -->
 
-
-
-
-    <main><!-- MAIN STARTS -->
-
-
-        <div class="fab-container">
-            <button onclick="topFunction()" id="topBtn" class="fab"></button>
-        </div>
-
-
-
-        <!-- POPUP ADVERT STARTS -->
-        <!-- <div class="close">
-            <div id="popup" class="popup">
-                <a href=""><img src="popup_adverts/NOTICE.webp" alt=""></a>
-            </div>
-        </div> -->
-        <!-- POPUP ADVERT ENDS -->
-
-
-
-
-
-        <!-- HERO STARTS -->
-        <section class="hero_section"
-            style="background-image: url('images/hero5.jpg'); background-repeat: no-repeat; background-size: cover; background-attachment: fixed; display: flex; align-items: center;">
-            <div class="fade-in"
-                style="max-width: 100%; border-left-style: solid; padding-left: 1rem; border-width: 2px;">
-                <h1 style="font-size: 3rem; color: #ffffff; max-width: 60%; text-align: left;" class="text1">WE SELL
-                    DIGITAL PRODUCTS AND SERVICES</h1>
-
-                <h2 style="font-size: 2rem; color: #ffffff; text-align: left;" class="text2">Your Destination For
-                    Professional Templates</h2>
-                <br>
-
-                <a href="shop.html" style="float: left;"><button class="button5">Browse Shop &#10132;</button></a>
-            </div>
-            <!-- <img src="images/hero-image.svg" alt="" style="width: 100%; height: 100%; max-width: 20%; margin-right: 4rem;" class="hero-image"> -->
-
-        </section>
-        <!-- HERO ENDS -->
-
-        <!-- HERO STARTS -->
-        <!-- <section class="hero_section" style="background-image: url(images/hero3.jpg); background-repeat: no-repeat; background-size: cover; background-attachment: fixed; display: flex">
-            <div class="fade-in">
-                <h1 style="font-size: 6rem; color: #ffffff; max-width: 30%; text-align: left;" class="text1">WE SELL DIGITAL PRODUCTS AND SERVICES</h1>
-                <p style="font-size: 2rem; color: #ffffff; text-align: left;" class="text2">Your Destination For Professional Templates</p>
-                <br>
-                <a href="shop.html" id="scrollButton" style="float: left"><button class="button2">Browse Shop &#10132;</button></a>
-            </div>
-        </section> -->
-        <!-- HERO ENDS -->
-
-
-        <h1 style="font-size: 3rem; hyphens: auto; word-break: break-word; overflow-wrap: break-word; margin: 1rem; color: #000000;"
-            class="text1">What Formats Do We Support?</h1>
-        <p
-            style="hyphens: auto; word-break: break-word; overflow-wrap: break-word; line-height: 1rem; margin: 1rem; color: #000000;">
-            We currently support <b>PDF, SVG, ODG, PNG, JPG, and TTF</b> templates. More formats will come soon. The
-            vision of PhonbireWorks is to provide a central space for users to download whatever templates they need -
-            business, or personal use. From spreadsheet templates, to resume templates, to responsive website templates.
-            We have it all here at PhonbireWorks. If you have any suggestions on what to add to the platform, then send
-            us an email using the contact form. We'd love to hear form you! If you want to request a custom template, or
-            finished product, then get in touch with us.
-        </p>
-        <a href="shop.html" style="margin: 1rem;"><button class="button6">Get In Touch</button></a>
-
-        <section style="display: flex; justify-content: center;">
-            <img src="images/bitmap.svg" alt="PhonbireWorks alegriaart"
-                style="display: flex; width: 100%; height: 100%; max-width: 10rem;margin: 5rem">
-        </section>
-
-
-
-
-
-
-
-
-
-
-
-
-    </main><!-- MAIN ENDS -->
-
-    <!-- FOOTER STARTS -->
-    <footer class="footer_section">
-        <p style="max-width: 50rem; text-align: left; color:#ffffff; padding: 1em; margin: auto">
-            PhonbireWorks is the go-to source for high-quality digital products and services, from templates,
-            to ebooks, to vector traced graphics. My goal is to provide customizable solutions tailored to your
-            needs. I am passionate about creating digital products and services that make a difference.
-        </p>
-        <p
-            style="font-size: 2rem; max-width: 50rem; text-align: center; color:#ffffff; padding-bottom: 1em; margin: auto">
-            Get In Touch
-        </p>
-        <!--FORM STARTS-->
         <div
-            style="display: flex; flex-direction: column; align-items: center; width: 100%; height: auto; margin: auto">
-            <form style="display: flex; flex-direction: column; align-items: center"
-                action="https://formspree.io/f/xnnqalvd" method="POST">
-                <label style="color: #ffffff" for="fname">First Name*</label>
-                <input style="width: 100%" type="text" id="fname" name="firstname" placeholder="Your name.." required>
-                <br>
-                <label style="color: #ffffff" for="lname">Last Name*</label>
-                <input style="width: 100%" type="text" id="lname" name="lastname" placeholder="Your last name.."
-                    required>
-                <br>
-                <label style="color: #ffffff" for="email">Email*</label>
-                <input style="width: 100%" type="email" id="email" name="email" placeholder="Your email.." required>
-                <br>
-                <label style="color: #ffffff" for="subject">Your Message*</label>
-                <textarea style="width: 100%" id="subject" name="subject" placeholder="Write something.."
-                    style="height:20rem" required></textarea>
-                <input style="width: 80%; margin: 1rem;" type="submit" value="Submit" class="button5">
-            </form>
+            style="width: 880px; height: auto; background-color: #272727; display: flex; justify-content: center; padding: 10px">
+            <img src="assets/logo.svg" alt="PhonbireWorks" style="height: 50px">
+            <img src="assets/logo2.svg" alt="PhonbireWorks" style="height: 50px">
         </div>
-        <!--FORM ENDS-->
-        <br><br><br>
-        <iframe src="copyright.html" style="width:100%; height: 3rem; border:none;" scrolling="no"></iframe>
-    </footer>
-    <!-- FOOTER ENDS -->
 
-    <script src="script.js"></script>
+        <!-- NAV STARTS -->
+        <nav style="background-color: #272727; padding: 10px;">
+            <a href="index.html" style="font-size: 16px; text-decoration: none; color: #FF5E00; margin-left: 10px;"
+                aria-label="">Home</a>
+            <a href="about.html" style="font-size: 16px; text-decoration: none; color: #ffffff; margin-left: 10px;"
+                aria-label="">About Me</a>
+            <a href="shop.html" style="font-size: 16px; text-decoration: none; color: #ffffff; margin-left: 10px;"
+                aria-label="">My Shop</a>
+            <a href="blog.html" style="font-size: 16px; text-decoration: none; color: #ffffff; margin-left: 10px;"
+                aria-label="">My Blog</a>
+            <a href="" style="font-size: 16px; text-decoration: none; color: #ffffff; margin-left: 10px;"
+                aria-label="">My Portfolio</a>
+            <a href="contact.html" style="font-size: 16px; text-decoration: none; color: #ffffff; margin-left: 10px;"
+                aria-label="">Contact Me</a>
+        </nav>
+        <!-- NAV ENDS -->
+
+        <main>
+
+            <!-- MARQUEE STARTS -->
+            <!-- <marquee style="width: 900px; height: 20px; background-color: #000000;">
+                <p style="font-size: 16px; font-family: monospace; color: #00ff11;">Shop coming soon. In the meantime, visit my boring business website.</p>
+            </marquee> -->
+            <!-- MARQUEE ENDS -->
+
+
+            <div style="width: 900px; height: auto; background-color: #ffffff; position: relative;">
+                <img src="assets/hero4.jpg" alt="" style="width: 900px;">
+                <div
+                    style="width: 500px; height: 200px; background-color: #e2e2e200; position: absolute; top: 100px; left: 10px">
+                    <h1 style="margin-left: 10px; margin-right: 10px; font-size: 32px; color: #ffffff;">We Sell Digital
+                        Products And Services</h1>
+
+                        <h2 style="margin-left: 10px; margin-right: 10px; font-size: 0px; color: #ffffff;">This is the official business website of PhonbireWorks. Professional templates for your everyday needs - business, or personal.</h2>
+
+                    <h2 style="margin-left: 10px; margin-right: 10px; font-size: 16px; color: #ffffff;">.PDF, .SVG,
+                        .ODG, .SLA, .TTF, .PNG, .JPG</h2>
+                    <br>
+                    <a href="shop.html" style="font-size: 16px; text-decoration: none; margin-left: 10px"
+                        aria-label="" class="button-style-2"><b>Browse Shop</b></a>
+                </div>
+                <img src="assets/hero-image.svg" alt=""
+                    style="position: absolute; top: 100px; left: 600px; width: 200px">
+
+
+                
+
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <!-- MAIN WEBPAGE BOX ENDS -->
+        </main>
+        <footer>
+            <!--FORM STARTS-->
+            <div
+                style="display: flex; flex-direction: column; align-items: center; width: 900px; height: auto; background-color: #272727;">
+                <form style="display: flex; flex-direction: column; align-items: center"
+                    action="https://formspree.io/f/xnnqalvd" method="POST">
+                    <label style="color: #ffffff" for="fname">First Name*</label>
+                    <input style="width: 100%" type="text" id="fname" name="firstname" placeholder="Your name.."
+                        required>
+                    <br>
+                    <label style="color: #ffffff" for="lname">Last Name*</label>
+                    <input style="width: 100%" type="text" id="lname" name="lastname" placeholder="Your last name.."
+                        required>
+                    <br>
+                    <label style="color: #ffffff" for="email">Email*</label>
+                    <input style="width: 100%" type="email" id="email" name="email" placeholder="Your email.." required>
+                    <br>
+                    <label style="color: #ffffff" for="subject">Your Message*</label>
+                    <textarea style="width: 100%" id="subject" name="subject" placeholder="Write something.."
+                        style="height:20rem" required></textarea>
+                    <br>
+                    <input style="width: 80%" type="submit" value="Submit" class="button-style-1">
+                    <br><br><br>
+                </form>
+            </div>
+            <!--FORM ENDS-->
+            <iframe src="copyright.html" style="width:900px; height: 16px; border:none;" scrolling="no"></iframe>
+        </footer>
+    </div>
 </body>
-
 </html>
