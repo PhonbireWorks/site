@@ -6,48 +6,32 @@
     <!-- ESSENTIALS STARTS -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PhonbireWorks - Home</title>
+    <title>PhonbireWorks - Blog</title>
     <link rel="icon" type="image/x-icon" href="images/logo pfp.svg">
     <link rel="stylesheet" href="styles/style.css">
     <!-- ESSENTIALS ENDS -->
 
     <!-- SCRIPTS & OTHER STUFF STARTS -->
-    <script src="animate_on_view.js"></script> <!-- SCRIPT FOR HANDLING ANIMATIONS WHEN IN VIEW -->
-    <!-- THE FOLLOWING REMOVES THE "INDEX.HTML" COMPLETELY. FOR SOME REASON, ONLY THE INDEX PAGE DOESN'T LIKE THE OTHER PAGE'S SCRIPTS WHICH RENAMES THE PAGE -->
-    <!-- <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            if (window.location.pathname.endsWith("index.html")) {
-                var newPath = window.location.pathname.replace("index.html", "");
-                history.replaceState("", "", newPath);
-            }
-        });
-    </script> -->
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="animate_on_view.js"></script>
+    <!-- <script>history.replaceState("", "", "blog");</script> THIS REMOVES THE ".HTML" EXTENTION FROM YOUR URLS -->
     <!-- SCRIPTS & OTHER STUFF ENDS -->
 
     <!-- GOOGLE SEO STUFF STARTS -->
     <meta name="google-site-verification" content="vwYMQ-wRvYRkFHBVw7M8SB17T_WKlH5fV7XAVc_c3qs" />
-    <meta name="keywords"
-        content="Warren Van Zuydam, PhonbireWorks, digital templates, ODG templates, SVG templates, PDF templates, LibreOffice templates">
+    <meta name="keywords" content="Warren Van Zuydam, PhonbireWorks blog">
     <meta name="description"
-        content="Explore high-quality digital products and services by PhonbireWorks, from resume templates, to monthly planners and Notion templates. Contact us for custom projects.">
+        content="The official blog of PhonbireWorks. Topics from graphic design and programs, to AI.">
     <meta name="author" content="Warren Van Zuydam">
     <!-- <meta name="keywords" content="Warren Van Zuydam, PhonbireWorks, digital templates, downloadable SVG, digital downloads"> -->
-    <link rel="canonical" href="https://phonbireworks.github.io/website/">
+    <link rel="canonical" href="https://phonbireworks.github.io/website/blog.html">
     <!-- GOOGLE SEO STUFF ENDS -->
 
-    <!-- MAINTENACE PAGE SCRIPT STARTS -->
-    <!-- <script> // Redirect to maintenance page
-window.location.replace("maintenance.html");
-</script> -->
-    <!-- MAINTENACE PAGE SCRIPT ENDS -->
+
+
 </head>
 
-
-
 <body>
-
-
 
 
 
@@ -87,11 +71,6 @@ window.location.replace("maintenance.html");
 
 
 
-
-
-
-
-
     <main><!-- MAIN STARTS -->
 
 
@@ -100,78 +79,84 @@ window.location.replace("maintenance.html");
         </div>
 
 
-
-        <!-- POPUP ADVERT STARTS -->
-        <div class="close">
-            <div id="popup" class="popup fade-in">
-                <a href="contact.html"><img src="popup_adverts/notice.png" alt=""></a>
-            </div>
-        </div>
-        <!-- POPUP ADVERT ENDS -->
-
-
-
-
-
         <!-- HERO STARTS -->
-        <div class="grid-box1" style="background-color: #272727; background-image: url(images/hero.svg); background-position: center; background-repeat: no-repeat; background-size: cover; background-attachment: fixed;">
-
-
-            <div class="grid-child1" style="justify-content: center; align-items: center;">
-                <img id="image1" src="images/logo.svg" alt=""
-                    style="width: 10rem; max-width: 100%; margin: 2rem;">
+        <!-- <section class="hero_section" style="background-image: url(images/hero4.jpg); background-repeat: no-repeat; background-size: cover; background-attachment: fixed; display: grid; place-items: center">
+            <div class="fade-in">
+                <h1 style="font-size: 4rem" class="text1">My Blog</h1>
+                <p style="font-size: 2rem" class="text2">Need your own blog?</p>
+                <br>
+                <button id="scrollButton" onclick="scrollToSection()" class="button1">Get Started</button>
             </div>
-            <div id="hero" class="grid-child1"
-                style="justify-content: center; align-items: center; height: 50rem;">
-                <div
-                    style="border-left-style: solid; border-width: 2px; border-color: #ffffff; padding: 1rem; display: grid; margin: 2rem">
-                    <p class="text1" style="color: #ffffff;">WE SELL DIGITAL PRODUCTS & SERVICES</p>
-                    <p class="text2" style="color: #ffffff;">Your Destination For Digital Templates & Services
-                    </p>
-                    <a href="shop.html" style="margin-top: 2rem"><button class="button5">Browse Shop</button></a>
-                </div>
-
-
-            </div>
-
-
-
-        </div>
+        </section> -->
         <!-- HERO ENDS -->
 
+        <section
+            style="background-color: #ffd1c9; display: flex; flex-direction: column; align-items: center; padding: 2%">
+            <br>
+            <h1 style="color: #724040; font-size: 3rem; text-align: center" class="text1 fade-in">BLOG</h1>
+            <br>
+            <p style="color: #724040; margin: auto; text-align: center">Wanna upload your own blog?</p>
+            <br>
+            <a href="contact.html" style="align-self: center"><button class="button6">Get In Touch</button></a>
 
-
-        
-
-
-
-        <section style="background-color: #ffd1c9;"> <!-- USE SECTIONS FOR BACKGROUND COLORS AND SECTIONS -->
-
-            <div class="grid-box1">
-
-                <div class="grid-child1" style="justify-content: center;">
-                    <p class="text1" style="color: #724040;margin-left: 2rem; margin-right: 2rem; margin-top: 2rem; font-size: 4rem;">What Formats Do We
-                        Support?</p>
-                    <p style="color: #724040; margin-left: 2rem; margin-right: 2rem; margin-top: 2rem">We currently support PDF, SVG, ODG, PNG,
-                        JPG, and TTF templates. More formats will come soon. The vision of PhonbireWorks is to
-                        provide a central space for users to download whatever templates they need - business, or
-                        personal use. From spreadsheet templates, to resume templates, to responsive website
-                        templates. We have it all here at PhonbireWorks. If you have any suggestions on what to add
-                        to the platform, then send us an email using the contact form. We'd love to hear form you!
-                        If you want to request a custom template, or finished product, then...
-                    </p>
-                    <a href="contact.html" style="margin: 2rem;"><button class="button6">Get In Touch</button></a>
-                </div>
-                <div class="grid-child1" style="justify-content: center; align-items: center;">
-                    <img src="images/bitmap.svg" alt="" style="width: 10rem; max-width: 100%; margin: 2rem;">
-                </div>
-
-
-            </div>
 
         </section>
 
 
+
+
+
+
+        <section class="grid-parent2">
+
+            <!-- PLACE NEW BLOGS AT THE TOP!!! -->
+
+            <!-- BOX STARTS -->
+            <div class="grid-child2">
+                <a href="blogs/8 March 2025/8 March 2025.html" style="text-decoration: none;"><img
+                        src="blogs/8 March 2025/media/1.jpg" style="max-width: 100%;">
+                    <div
+                        style="display: flex; flex-direction: row; justify-content: space-between; align-items: center">
+                        <p style="color: #724040; font-size: 2rem; margin: 5%; hyphens: auto; word-break: break-word; overflow-wrap: break-word;"
+                            class="text2">
+                            How To Keep Your Online Accounts Safe From Hackers</p>
+                    </div>
+                    <p style="color: #724040; font-size: 1rem; margin: 5%; hyphens: auto; word-break: break-word; overflow-wrap: break-word;"
+                        class="text3">
+                        <b>Date: </b>8 March 2025
+                    </p>
+                    <p style="color: #724040; font-size: 1rem; margin: 5%; hyphens: auto; word-break: break-word; overflow-wrap: break-word;"
+                        class="text3">
+                        <b>Author: </b>Warren Van Zuydam
+                    </p>
+            </div></a>
+            <!-- BOX ENDS -->
+
+            <!-- BOX STARTS -->
+            <div class="grid-child2">
+                <a href="blogs/4 November 2024/4 November 2024.html" style="text-decoration: none;"><img
+                        src="blogs/4 November 2024/media/1.jpg" style="max-width: 100%;">
+                    <div
+                        style="display: flex; flex-direction: row; justify-content: space-between; align-items: center">
+                        <p style="color: #724040; font-size: 2rem; margin: 5%; hyphens: auto; word-break: break-word; overflow-wrap: break-word;"
+                            class="text2">
+                            Best Free Programs For Graphic Design And PDF Creation</p>
+                    </div>
+                    <p style="color: #724040; font-size: 1rem; margin: 5%; hyphens: auto; word-break: break-word; overflow-wrap: break-word;"
+                        class="text3">
+                        <b>Date: </b>4 November 2024
+                    </p>
+                    <p style="color: #724040; font-size: 1rem; margin: 5%; hyphens: auto; word-break: break-word; overflow-wrap: break-word;"
+                        class="text3">
+                        <b>Author: </b>Warren Van Zuydam
+                    </p>
+            </div></a>
+            <!-- BOX ENDS -->
+
+
+
+
+        </section>
 
 
 
