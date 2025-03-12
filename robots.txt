@@ -1,4 +1,0 @@
-User-agent: *
-Disallow:
-
-Sitemap: https://phonbireworks.github.io/site/sitemap.xml
